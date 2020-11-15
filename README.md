@@ -7,7 +7,7 @@
 ## Running the project
 ```shell script
  git clone https://github.com/rakesh-patnaik/tech_review.git
- cd tech_review
+ cd tech_review/code
  python -m venv env
  source env/bin/activate
  pip install --upgrade pip
