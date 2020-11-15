@@ -1,8 +1,41 @@
 # Tech Review
+ 
+## Prerequesites to run this project:
+ python3
+ 
+ 
+## Running the project
+```shell script
+ git clone https://github.com/rakesh-patnaik/tech_review.git
+ cd tech_review
+ python -m venv env
+ source env/bin/activate
+ pip install --upgrade pip
+ pip install matplotlib
+ pip install wordcloud
+ pip install pandas
+ pip install nltk
+ python -m pip install lxml bs4 requests
+ python  -m pip install python-slugify
+ python -m nltk.downloader stopwords
+ python -m nltk.downloader punkt
+ python -m nltk.downloader wordnet
+ mkdir -p unigram/least_frequent_words
+ mkdir -p unigram/frequent_words
+ mkdir -p bigram/least_frequent_words
+ mkdir -p bigram/frequent_words
+```
+### Unigram WordClouds: Execute code to generate
+```shell script
+python3 unigram_cnn_news_wordcloud.py
+```
 
-Please enter your topics [here](https://docs.google.com/spreadsheets/d/1rYlXm-46abhU4Lg7K2zrDE6VSl2uH_tNql1S7fd1UIM/edit?usp=sharing) by Week 8 (Oct 18). You may choose a topic already chosen by other students (e.g. Survey of text mining toolkits) but please make sure that your review covers something novel that is not available online or in other students' submissions. The "description" column in the sign up sheet should help identify whether your review is unique or not. So, please read the desciptions of other students who've chosen a similar topic as you. You should also provide sufficient details in your description to help others decide.
+this creates wordclouds under <current dir>/unigram/frequent_words and <current dir>/unigram/least_frequent_words
 
 
-Some sample topics have been provided [here](https://docs.google.com/spreadsheets/d/1yeKm8hJbyRGhiUDvZv9-S3Zzu5hDtET-O6Yeci-VPOs/edit?usp=sharing). You are free to use them or come up with your own topics!
+### Bigram WordClouds: Execute code to generate 
+```shell script
+python3 bigram_cnn_news_wordcloud.py
+```
 
-## Due: Nov 8, 2020 at 11:59 pm CST
+this creates wordclouds under <current dir>/bigram/frequent_words and <current dir>/bigram/least_frequent_words
